@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #calculator{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body class="flex justify-center items-center h-screen">
+    <div id="calculator" class="font-sans bg-gray-900 overflow-hidden rounded-3xl max-w-xl">
+
+        <input id="display" readonly class="w-full p-5 text-6xl text-left bg-gray-700 text-white"> 
+        <div id="key" class=" grid grid-cols-4 gap-4 p-5">
+
+            <button onclick="appendToDisplay('+')" class="w-28 h-28 rounded-full bg-blue-400 text-white text-3xl font-bold cursor-pointer hover:bg-gray-400 active:bg-gray-300">+</button>
+            <button onclick="appendToDisplay('7')" class="w-28 h-28 rounded-full bg-gray-500 text-white text-3xl font-bold cursor-pointer hover:bg-gray-400 active:bg-gray-300">7</button>
+            <button onclick="appendToDisplay('8')" class="w-28 h-28 rounded-full bg-gray-500 text-white text-3xl font-bold cursor-pointer hover:bg-gray-400 active:bg-gray-300">8</button>
+            <button onclick="appendToDisplay('9')" class="w-28 h-28 rounded-full bg-gray-500 text-white text-3xl font-bold cursor-pointer hover:bg-gray-400 active:bg-gray-300">9</button>
+            <button onclick="appendToDisplay('-')" class="w-28 h-28 rounded-full bg-blue-500 text-white text-3xl font-bold cursor-pointer hover:bg-gray-400 active:bg-gray-300">-</button>
+            <button onclick="appendToDisplay('4')" class="w-28 h-28 rounded-full bg-gray-500 text-white text-3xl font-bold cursor-pointer hover:bg-gray-400 active:bg-gray-300">4</button>
+            <button onclick="appendToDisplay('5')" class="w-28 h-28 rounded-full bg-gray-500 text-white text-3xl font-bold cursor-pointer hover:bg-gray-400 active:bg-gray-300">5</button>
+            <button onclick="appendToDisplay('6')" class="w-28 h-28 rounded-full bg-gray-500 text-white text-3xl font-bold cursor-pointer hover:bg-gray-400 active:bg-gray-300">6</button>
+            <button onclick="appendToDisplay('*')" class="w-28 h-28 rounded-full bg-blue-500 text-white text-3xl font-bold cursor-pointer hover:bg-gray-400 active:bg-gray-300">*</button>
+            <button onclick="appendToDisplay('1')" class="w-28 h-28 rounded-full bg-gray-500 text-white text-3xl font-bold cursor-pointer hover:bg-gray-400 active:bg-gray-300">1</button>
+            <button onclick="appendToDisplay('2')" class="w-28 h-28 rounded-full bg-gray-500 text-white text-3xl font-bold cursor-pointer hover:bg-gray-400 active:bg-gray-300">2</button>
+            <button onclick="appendToDisplay('3')" class="w-28 h-28 rounded-full bg-gray-500 text-white text-3xl font-bold cursor-pointer hover:bg-gray-400 active:bg-gray-300">3</button>
+            <button onclick="appendToDisplay('/')" class="w-28 h-28 rounded-full bg-blue-500 text-white text-3xl font-bold cursor-pointer hover:bg-gray-400 active:bg-gray-300">/</button>
+            <button onclick="appendToDisplay('0')" class="w-28 h-28 rounded-full bg-gray-500 text-white text-3xl font-bold cursor-pointer hover:bg-gray-400 active:bg-gray-300">0</button>
+            <button onclick="appendToDisplay('.')" class="w-28 h-28 rounded-full bg-gray-500 text-white text-3xl font-bold cursor-pointer hover:bg-gray-400 active:bg-gray-300">.</button>
+            <button onclick="calculate()" class="w-28 h-28 rounded-full bg-gray-500 text-white text-3xl font-bold cursor-pointer">=</button>
+            <button onclick="clearScreen()" class="w-28 h-28 rounded-full bg-blue-500 text-white text-3xl font-bold cursor-pointer">CLR</button>
+
+
+
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
