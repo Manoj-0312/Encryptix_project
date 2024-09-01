@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Leaf Lens Web Platform",
+    "desc": "Developed a web-based platform using Flask to assist farmers in detecting plant diseases and offering fertilizer recommendations using <b>Tensorflow</b>.",
+    "image": "leaf-lens"
+    
+  },
+  {
+    "name": "Snake Game using Tkinter",
+    "desc": "Developed a classic Snake game using Python's Tkinter library for GUI and Object-Oriented Programming (OOP) principles.",
+    "image": "snake"
+  },
+  {
+    "name": "Blog Website using Flask",
+    "desc": " Developed a dynamic blog website with Flask. Designed UI with user authentication, post creation, and commenting features.",
+    "image": "blog"
+  },
+  {
+    "name": "Ping Pong game",
+    "desc": "Developed a classic Ping Pong game using Python's Tkinter library for GUI and Object-Oriented Programming (OOP) principles.",
+    "image": "ping-pongs"
+  }
+]
